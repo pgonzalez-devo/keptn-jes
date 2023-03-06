@@ -1,0 +1,16 @@
+apiVersion: v2
+actions:
+  - name: "Executing Python Script"
+    events:
+      - name: "sh.keptn.event.remote-task.triggered"
+    tasks:
+      - name: "Using Python3"
+        files:
+          - files/jesTesting.py
+        image: "python:3.9"
+        cmd:
+          - "ls"
+          # - "python"
+        # args:
+        #   - "--help"
+        # - "/keptn/files/jesTesting.py"
