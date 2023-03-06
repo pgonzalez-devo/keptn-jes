@@ -9,8 +9,6 @@ actions:
           - files/jesTesting.py
         image: "python:3.9"
         cmd:
-          - "ls"
-          # - "python"
-        # args:
-        #   - "--help"
-        # - "/keptn/files/jesTesting.py"
+          - "python"
+        args:
+          - "/keptn/files/jesTesting.py"
